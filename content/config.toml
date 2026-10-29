@@ -11,7 +11,7 @@ description = "Personal site of Saisai Yin — hydrology, landslide modelling, a
 # 标签页小图标，文件放在 public/ 目录下
 # 浏览器会长期缓存 favicon，所以地址后面带一个版本号；换图后改这个数字即可（?v=3、?v=4…）
 favicon = "/favicon.svg?v=2"
-# 页脚显示的最后更新日期
+# 页脚现在显示的是「© 年份 姓名」，不再读取这一项，留着备用
 last_updated = "October 2026"
 
 [author]

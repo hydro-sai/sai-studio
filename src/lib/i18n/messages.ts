@@ -43,8 +43,7 @@ export interface LocaleMessages {
     code: string;
   };
   footer: {
-    lastUpdated: string;
-    builtWithPrism: string;
+    closingNote: string;
   };
 }
 
@@ -93,8 +92,7 @@ const en: LocaleMessages = {
     code: 'Code',
   },
   footer: {
-    lastUpdated: 'Last updated',
-    builtWithPrism: 'Built with PRISM',
+    closingNote: 'May the Force be with you 🎇',
   },
 };
 
@@ -143,8 +141,7 @@ const zh: LocaleMessages = {
     code: '代码',
   },
   footer: {
-    lastUpdated: '最近更新',
-    builtWithPrism: '由 PRISM 构建',
+    closingNote: '愿原力与你同在 🎇',
   },
 };
 

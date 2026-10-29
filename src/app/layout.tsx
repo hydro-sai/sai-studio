@@ -94,23 +94,23 @@ function buildLocalizedConfigMaps(
 ): {
   navigationByLocale: Record<string, SiteConfig['navigation']>;
   siteTitleByLocale: Record<string, string>;
-  lastUpdatedByLocale: Record<string, string | undefined>;
+  authorNameByLocale: Record<string, string>;
 } {
   const navigationByLocale: Record<string, SiteConfig['navigation']> = {};
   const siteTitleByLocale: Record<string, string> = {};
-  const lastUpdatedByLocale: Record<string, string | undefined> = {};
+  const authorNameByLocale: Record<string, string> = {};
 
   for (const locale of locales) {
     const localizedConfig = getConfig(locale);
     navigationByLocale[locale] = localizedConfig.navigation;
     siteTitleByLocale[locale] = localizedConfig.site.title;
-    lastUpdatedByLocale[locale] = localizedConfig.site.last_updated;
+    authorNameByLocale[locale] = localizedConfig.author.name;
   }
 
   return {
     navigationByLocale,
     siteTitleByLocale,
-    lastUpdatedByLocale,
+    authorNameByLocale,
   };
 }
 
@@ -126,7 +126,7 @@ export default function RootLayout({
   const {
     navigationByLocale,
     siteTitleByLocale,
-    lastUpdatedByLocale,
+    authorNameByLocale,
   } = buildLocalizedConfigMaps(targetLocales);
 
   return (
@@ -174,8 +174,8 @@ export default function RootLayout({
               {children}
             </main>
             <Footer
-              lastUpdated={config.site.last_updated}
-              lastUpdatedByLocale={lastUpdatedByLocale}
+              authorName={config.author.name}
+              authorNameByLocale={authorNameByLocale}
               defaultLocale={runtimeI18n.defaultLocale}
             />
           </LocaleProvider>
