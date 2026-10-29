@@ -1,0 +1,4 @@
+type = "text"
+title = "研究"
+description = "水文—滑坡耦合模拟、降雨型边坡失稳机理，以及我自己维护的科学软件。"
+source = "research.md"

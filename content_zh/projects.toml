@@ -1,0 +1,36 @@
+type = "card"
+title = "项目"
+description = "我参与开发和维护的模型、工具与小项目。"
+
+[[items]]
+title = "iHydroSlide3D"
+subtitle = "开源水文—滑坡耦合模型"
+date = "2025 – 至今"
+link = "https://github.com/hydro-sai"
+content = """
+一个基于物理过程的模型，把分布式降雨—径流演算与边坡稳定性评价连接起来。
+目前正从 Fortran 重写为 Python（NumPy + Numba），以支持全国尺度运行。
+
+**我负责：** Python 版本迁移、地形与强迫数据流水线、结果验证。
+"""
+tags = ["Python", "NumPy/Numba", "水文", "滑坡"]
+
+[[items]]
+title = "Sai Studio"
+subtitle = "本站"
+date = "2026"
+content = """
+基于 Next.js 与 PRISM 模板搭建的配置驱动型个人主页。
+所有内容都写在 TOML / Markdown / BibTeX 文件里，更新内容不需要改任何组件代码。
+"""
+tags = ["Next.js", "TypeScript", "Tailwind CSS"]
+
+[[items]]
+title = "地形预处理工具集"
+subtitle = "面向大区域建模的栅格处理脚本"
+date = "2026"
+content = """
+把全国 DEM 处理成水文模型所需的各类地形派生量
+（汇流累积量、流向、地形湿度指数、坡度、坡向），并显式处理 nodata。
+"""
+tags = ["GDAL", "rasterio", "QGIS"]

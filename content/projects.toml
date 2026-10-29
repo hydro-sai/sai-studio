@@ -1,0 +1,36 @@
+type = "card"
+title = "Projects"
+description = "Tools, models and side projects I build and maintain."
+
+[[items]]
+title = "iHydroSlide3D"
+subtitle = "Open-source coupled hydrology–landslide model"
+date = "2025 – present"
+link = "https://github.com/hydro-sai"
+content = """
+A physically based model that links distributed rainfall–runoff routing with slope-stability assessment.
+Currently being rewritten from Fortran to Python (NumPy + Numba) so it can run at national scale.
+
+**My role:** Python port, terrain/forcing pipeline, validation.
+"""
+tags = ["Python", "NumPy/Numba", "Hydrology", "Landslide"]
+
+[[items]]
+title = "Sai Studio"
+subtitle = "This website"
+date = "2026"
+content = """
+A config-driven personal site built on Next.js and the PRISM template.
+All content lives in plain TOML / Markdown / BibTeX files, so updating it never means touching component code.
+"""
+tags = ["Next.js", "TypeScript", "Tailwind CSS"]
+
+[[items]]
+title = "Terrain preprocessing toolkit"
+subtitle = "Raster utilities for large-domain modelling"
+date = "2026"
+content = """
+Scripts that turn a national DEM into the terrain derivatives a hydrological model needs
+(flow accumulation, flow direction, TWI, slope, aspect), with explicit nodata handling.
+"""
+tags = ["GDAL", "rasterio", "QGIS"]

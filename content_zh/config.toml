@@ -1,0 +1,75 @@
+# ============================================================
+# 中文版全站配置（content/ 是英文版，改哪个语言就改哪个目录）
+# ============================================================
+
+[site]
+title = "Sai Studio"
+description = "赛的个人主页 —— 水文、滑坡数值模拟，以及我自己写的小工具。"
+favicon = "/favicon.svg"
+last_updated = "2026 年 10 月"
+
+[author]
+name = "Sai"
+title = "水文与水资源 研究生"
+institution = "河海大学"
+avatar = "/bio.jpg"
+
+[social]
+email = "your-email@example.com"
+location = "中国 · 南京"
+location_url = "https://www.google.com/maps/place/Nanjing"
+location_details = [
+  "河海大学，",
+  "江苏省南京市西康路 1 号"
+]
+google_scholar = ""
+orcid = ""
+github = "https://github.com/hydro-sai"
+linkedin = ""
+
+[features]
+enable_likes = true
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "zh"
+mode = "auto"
+fixed_locale = "zh"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "关于"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "研究"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "论文"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "项目"
+type = "page"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"

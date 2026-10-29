@@ -1,0 +1,29 @@
+type = "about"
+title = "关于"
+
+# 首页简介下的研究兴趣标签
+[profile]
+research_interests = [
+  "水文—滑坡耦合",
+  "滑坡数值模拟",
+  "开源科学软件"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "关于我"
+
+[[sections]]
+id = "featured_publications"
+type = "publications"
+title = "精选论文"
+filter = "selected"
+limit = 3
+
+[[sections]]
+id = "news"
+type = "list"
+title = "最近动态"
+source = "news.toml"

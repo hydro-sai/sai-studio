@@ -1,0 +1,4 @@
+type = "text"
+title = "Research"
+description = "What I work on: coupled hydrology–landslide modelling, rainfall-induced slope failure, and scientific software."
+source = "research.md"
