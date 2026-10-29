@@ -1,0 +1,29 @@
+{
+  // 让左侧文件树只显示该看的东西：内容文件 + 源码
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/out": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/out": true,
+    "**/package-lock.json": true
+  },
+
+  // 统一 UTF-8，防止中文写进文件后变乱码
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": false,
+
+  // 长句子自动换行，改 bio.md 时不用左右拖
+  "editor.wordWrap": "on",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+
+  // 保存时自动去掉行尾多余空格
+  "files.trimTrailingWhitespace": true,
+
+  "explorer.compactFolders": false,
+  "workbench.startupEditor": "none"
+}
