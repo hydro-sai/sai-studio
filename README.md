@@ -30,7 +30,7 @@ Windows 下也可以直接双击 **`start-dev.bat`**，它会自动装依赖、�
 | 最近动态 | `content_zh/news.toml` |
 | 论文列表 | `content/publications.bib` |
 | 项目卡片 | `content_zh/projects.toml` |
-| 头像 / 图标 | `public/bio.jpg`、`public/favicon.svg` |
+| 头像 / 图标 | `public/photo.jpg`、`public/favicon.svg` |
 
 ## 部署
 

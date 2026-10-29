@@ -25,6 +25,12 @@ export interface SiteConfig {
     orcid?: string;
     github?: string;
     linkedin?: string;
+    /** B站个人空间，如 https://space.bilibili.com/1234567 */
+    bilibili?: string;
+    /** CSDN 博客主页，如 https://blog.csdn.net/your_id */
+    csdn?: string;
+    /** 微信：个人主页没有公开 URL，一般填公众号文章链接或二维码图片的地址 */
+    wechat?: string;
     [key: string]: string | string[] | undefined;
   };
   features: {

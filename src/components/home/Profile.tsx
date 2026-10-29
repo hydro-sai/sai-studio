@@ -12,21 +12,10 @@ import {
 import { MapPinIcon as MapPinSolidIcon, EnvelopeIcon as EnvelopeSolidIcon } from '@heroicons/react/24/solid';
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid';
 import { Github, Linkedin, Pin } from 'lucide-react';
+import { BilibiliIcon, CsdnIcon, WechatIcon, OrcidIcon } from '@/components/icons/BrandIcons';
 import type { SiteConfig } from '@/lib/config';
 import { useMessages } from '@/lib/i18n/useMessages';
 import { asset } from '@/lib/utils';
-
-// Custom ORCID icon component
-const OrcidIcon = ({ className }: { className?: string }) => (
-    <svg
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className={className}
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z" />
-    </svg>
-);
 
 interface ProfileProps {
     author: SiteConfig['author'];
@@ -97,6 +86,24 @@ export default function Profile({ author, social, features, researchInterests }:
             name: 'GitHub',
             href: social.github,
             icon: Github,
+        }] : []),
+        // ---- 中国常用平台 ----
+        // 想调整顺序，就挪动下面这几段的位置；想让某个图标消失，把 config.toml 里
+        // 对应的值改成空字符串 "" 即可，这段会自动跳过。
+        ...(social.bilibili ? [{
+            name: '哔哩哔哩',
+            href: social.bilibili,
+            icon: BilibiliIcon,
+        }] : []),
+        ...(social.csdn ? [{
+            name: 'CSDN',
+            href: social.csdn,
+            icon: CsdnIcon,
+        }] : []),
+        ...(social.wechat ? [{
+            name: '微信',
+            href: social.wechat,
+            icon: WechatIcon,
         }] : []),
         ...(social.linkedin ? [{
             name: 'LinkedIn',
@@ -289,10 +296,14 @@ export default function Profile({ author, social, features, researchInterests }:
                             </div>
                         );
                     }
+                    // 以 / 开头的值指向 public/ 里的本地文件（例如微信二维码图片），
+                    // 需要过一遍 asset() 补上部署前缀 /sai-studio，否则线上会 404。
+                    // 以 http 开头的正常外链则原样使用。
+                    const linkHref = link.href.startsWith('/') ? asset(link.href) : link.href;
                     return (
                         <a
                             key={link.name}
-                            href={link.href}
+                            href={linkHref}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-2 sm:p-2 text-neutral-600 dark:text-neutral-400 hover:text-accent transition-colors duration-200"
