@@ -34,8 +34,18 @@ Windows 下也可以直接双击 **`start-dev.bat`**，它会自动装依赖、�
 
 ## 部署
 
-推到 `main` 分支即自动构建发布（`.github/workflows/deploy.yml`）。
-仓库首次使用时，需要在 **Settings → Pages → Build and deployment → Source** 里选择 **GitHub Actions**。
+推到 `main` 分支即自动构建发布（`.github/workflows/deploy.yml`），约 1–2 分钟。
+Pages 的 Source 已经设为 **GitHub Actions**，不需要再手动配置。
+
+常用命令：
+
+```bash
+git add -A
+git commit -m "更新内容"
+git push
+```
+
+进度看仓库的 **Actions** 标签。
 
 ## 目录
 
