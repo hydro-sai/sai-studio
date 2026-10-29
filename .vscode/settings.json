@@ -25,5 +25,8 @@
   "files.trimTrailingWhitespace": true,
 
   "explorer.compactFolders": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+
+  // 终端默认用 cmd（PowerShell 默认禁止运行 npm.ps1 脚本，会报 SecurityError）
+  "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }
