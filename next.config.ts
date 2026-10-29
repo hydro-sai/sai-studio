@@ -25,13 +25,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.bib$/,
-      type: "asset/source",
-    });
-    return config;
-  },
+  // 说明：这里不写 webpack / turbopack 自定义配置。
+  // 论文的 .bib 文件是在构建时用 fs 直接从 content/ 目录读取的，
+  // 不经过打包器，所以不需要给 .bib 加 loader。
+  // 一旦写了 webpack 配置，next dev（Turbopack 模式）就会持续报警告。
 };
 
 export default nextConfig;
