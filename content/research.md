@@ -2,15 +2,16 @@
 
 Rainfall-triggered landslides are rarely a purely geotechnical problem: the water that destabilises a slope has to travel through a catchment first. I work on models that simulate both sides of that chain — the hydrological routing that decides *where* and *when* water arrives, and the slope-stability response that decides whether the hillslope fails.
 
-## iHydroSlide3D
+## iHydroSlide
 
-**iHydroSlide3D** is an open-source, physically based model that couples a distributed hydrological model with a landslide susceptibility / runout module.
+**iHydroSlide** is an open-source, physically based model that couples a distributed hydrological model with a landslide susceptibility / runout module.
 
 - **Hydrology:** gridded rainfall–runoff routing on a coarse mesh (~1 km)
 - **Landslide:** infinite-slope stability evaluated on a finer mesh (~100–270 m)
-- **Implementation:** originally Fortran, now being migrated to Python (NumPy + Numba) for easier extension and deployment
+- **Implementation:** originally developed in Fortran and currently being migrated to Python (NumPy + Numba) to facilitate extension and deployment. The resolution of the hydrological and landslide modules can be adjusted by users according to their needs
+- **Vision:** To build an open-source, efficient, and novice-friendly hydrological–landslide coupled model that helps reduce disaster-related losses and casualties.
 
-The current focus is a full national-scale configuration for China (3226 × 5589 grid) with regional test cases in the Qaidam Basin, Qinghai Province.
+Current work focuses on a national-scale configuration for China (3226 × 5589 grid), with regional validation cases in the Qaidam Basin, Qinghai Province, and the middle and upper reaches of the Hanjiang River Basin in Shaanxi Province.
 
 ## Rainfall thresholds and early warning
 
@@ -22,4 +23,4 @@ I care about the unglamorous parts: reproducible input pipelines, honest error m
 
 ---
 
-*Want to collaborate or spot a bug? The fastest way is [GitHub](https://github.com/hydro-sai) or email.*
+*Want to collaborate or spot a bug? The fastest way is [GitHub](https://github.com/hydro-sai) or [email](saisai.yin@foxmail.com).*

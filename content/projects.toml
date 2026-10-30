@@ -1,9 +1,64 @@
 type = "card"
 title = "Projects"
-description = "Tools, models and side projects I build and maintain."
+description = "Projects, models, and tools I have contributed to, developed, and maintained."
 
 [[items]]
-title = "iHydroSlide3D"
+title = "Qinghai Provincial Science and Technology Program (2024-SF-A1)"
+subtitle = "Research Project of the China Meteorological Administration"
+date = "Jun. 2025 – present"
+link = "https://github.com/hydro-sai/Qinghai-task"
+content = """
+In response to the practical disaster prevention needs of small and medium-sized rivers in Qinghai Province—characterized by highly abrupt short-duration floods and sparse monitoring stations—a flood forecasting and early warning model for small and medium-sized watersheds has been deployed at the Qinghai Provincial Meteorological Bureau. Multiple rounds of operational testing and debugging have verified the model’s stability and computational accuracy.
+
+**My responsibilities:** simulation and early warning of flood and landslide hazards during the flood season; drafting mid-term and final project acceptance reports; developing a 1-km-resolution hydrological–landslide coupled model (iHydroSlide); and conducting risk analysis of rainfall-induced floods and landslides in small and medium-sized watersheds in Qinghai Province.
+"""
+tags = ["Disaster early warning", "1-km-resolution model", "Report writing"]
+
+[[items]]
+title = "Annual Validation of Nationwide Flood, Flash Flood, and Landslide Disasters"
+subtitle = "Research Project of the China Meteorological Administration"
+date = "Sep. 2024 – Oct. 2024"
+link = "https://github.com/hydro-sai/China-task"
+content = """
+A hydrological–landslide coupled model was applied to simulate flood, flash flood, and landslide disasters at the national scale, evaluate annual disaster prevention performance, and optimize prevention and control strategies. The work aims to improve the national disaster prevention and control system, enhance cross-regional early warning accuracy and coordinated response capacity, and provide a basis for policy-making.
+
+**My responsibilities:** nationwide simulation of flood, flash flood, and landslide disasters; debugging and correcting data and regional parameters based on the iHydroSlide model; model verification and evaluation; plotting ROC curves and calculating AUC and disaster hit rates.
+
+**One paper published in an EI-indexed journal**
+"""
+tags = ["Nationwide disaster assessment", "Model verification", "Report writing"]
+
+[[items]]
+title = "Analysis of Water Resources Supply–Demand Balance in the Yangtze River Basin Region"
+subtitle = "Research Project of Changjiang Survey, Planning, Design and Research Co., Ltd."
+date = "Nov. 2023 – Dec. 2023"
+link = "https://space.bilibili.com/511390777/lists/2013894"
+content = """
+In response to the practical water resources management needs arising from the uneven spatiotemporal distribution of water resources and prominent local supply–demand conflicts in the Yangtze River Basin Region, multi-scenario simulation analyses of water resources supply–demand balance were conducted. Water-scarce areas and supply–demand shortcomings were identified through subregional accounting and scenario comparison.
+
+**My responsibilities:** collecting and verifying supply–demand data for the Yangtze River Basin Region; conducting subregional supply–demand accounting and multi-scenario simulation analysis; carrying out available water supply and water demand forecasting and identifying water-scarcity patterns; drafting thematic sections; and supporting the revision of deliverables, preparation of figures, and compilation and archiving of reports.
+
+**Three copyright registrations for works obtained**
+"""
+tags = ["Yangtze River Basin Region", "Water resources supply–demand balance", "Water demand forecasting", "Water-scarcity patterns"]
+
+[[items]]
+title = "Rainstorm Flood Study for the Old Water Intake–Mining Area Water Pipeline in the Gansu Mining Area"
+subtitle = "Research Project of China Institute of Water Resources and Hydropower Research"
+date = "Jun. 2022 – Dec. 2022"
+link = "https://space.bilibili.com/511390777/lists/2497473?type=series"
+content = """
+To meet the flood control analysis requirements along the old water intake–mining area water pipeline in the Gansu mining area—where flash flood risks are prominent and basic geomorphological data for small watersheds along the route are scarce—hydro-geomorphological parameter extraction and characteristic value calculation were conducted for the small watersheds along the pipeline. Watershed delineation and calculations of river length and channel slope provided fundamental support for rainstorm flood estimation along the pipeline.
+
+**My responsibilities:** delineating small watersheds along the pipeline in the Gansu mining area; extracting 86 small watersheds based on DEM data; and calculating the main stem river length and channel slope of each watershed to provide geomorphological parameters for rainstorm flood estimation along the pipeline.
+
+**One copyright registration for works obtained**
+"""
+tags = ["Small watershed extraction", "Channel slope", "River length calculation", "DEM hydrological analysis"]
+
+
+[[items]]
+title = "iHydroSlide"
 subtitle = "Open-source coupled hydrology–landslide model"
 date = "2025 – present"
 link = "https://github.com/hydro-sai"
@@ -15,15 +70,6 @@ Currently being rewritten from Fortran to Python (NumPy + Numba) so it can run a
 """
 tags = ["Python", "NumPy/Numba", "Hydrology", "Landslide"]
 
-[[items]]
-title = "Sai Studio"
-subtitle = "This website"
-date = "2026"
-content = """
-A config-driven personal site built on Next.js and the PRISM template.
-All content lives in plain TOML / Markdown / BibTeX files, so updating it never means touching component code.
-"""
-tags = ["Next.js", "TypeScript", "Tailwind CSS"]
 
 [[items]]
 title = "Terrain preprocessing toolkit"

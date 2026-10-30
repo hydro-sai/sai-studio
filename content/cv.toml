@@ -1,4 +1,4 @@
 type = "text"
 title = "CV"
-description = "Education, research experience and skills."
+description = "Personal background, competition and practice experiences, research skills, honours and awards"
 source = "cv.md"
