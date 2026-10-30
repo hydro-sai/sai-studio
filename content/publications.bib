@@ -1,24 +1,31 @@
-@article{sai2026ihydroslide,
-  selected = {true},
-  title = {A Coupled Hydrology–Landslide Model for National-Scale Rainfall-Induced Slope Failure Assessment},
-  author = {Sai and Coauthor One and Coauthor Two},
-  year = {2026},
-  journal = {Example Journal of Hydrology},
-  volume = {1},
-  pages = {1--18},
-  doi = {10.1000/example.2026.001},
-  abstract = {Placeholder abstract. Replace this whole entry with a real publication exported from Zotero, Mendeley or Google Scholar.},
-  description = {Placeholder entry — replace with your own paper.},
-  keywords = {Hydrology, Landslide, Numerical Modelling}
-}
+% ============================================================
+%  英文版论文列表（English publications）
+%  只在界面切到 English 时生效；中文界面读的是
+%  content_zh/publications.bib，两个文件互不影响。
+%
+%  字段说明（够用就行）：
+%    title       = 论文标题
+%    author      = 作者，用 and 分隔；自己的名字要和 config.toml 里一致才会高亮
+%    year        = 年份
+%    journal     = 期刊名（会议论文改用 booktitle）
+%    abstract    = 点「摘要」按钮展开的完整摘要
+%    description = 首页「精选论文」卡片下方那一两句话（超过两行会被截断）
+%    note        = 论文页卡片下方那一段（期刊状态、基金项目等），可以换行
+%    selected    = {true} 才会出现在首页精选论文里
+%    url         = 论文链接
+% ============================================================
 
-@inproceedings{sai2025qaidam,
-  title = {Regional Calibration of a Distributed Hydrology–Landslide Model in the Qaidam Basin, Qinghai},
-  author = {Sai and Coauthor One},
-  year = {2025},
-  booktitle = {Proceedings of the Example Conference on Geohazards},
-  pages = {100--110},
-  publisher = {Example Press},
-  abstract = {Placeholder abstract. Replace this whole entry with a real publication.},
-  keywords = {Qaidam, Landslide, Calibration}
+@article{zhang2026floodlandslide,
+  selected = {true},
+  title = {Spatiotemporal Patterns and Machine-Learning Attribution of Rainstorm-Induced Flood and Landslide Hazards in Small and Medium-Sized Catchments of China, 2015–2025},
+  author = {Ke Zhang and Saisai Yin and Hongjun Bao and Hengde Zhang},
+  year = {2026},
+  journal = {Water Resources Protection},
+  pages = {1–15},
+  urldate = {2026-08-20},
+  url = {https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CAPJ&dbname=&filename=},
+  abstract = {Rainstorm-induced floods and landslides in small and medium-sized catchments of China show strong spatial heterogeneity, and their multi-factor, non-linear failure mechanisms remain difficult to quantify. We propose Geo-LGBM, a hazard-factor identification framework that couples a geographical detector with LightGBM. Taking the seven geographical regions of China as spatial constraints, the geographical detector defines the modelling boundaries and LightGBM resolves the non-linear contribution of individual factors to hazard occurrence. Validation over 2015–2025 yields AUC values above 0.9 in every region, indicating good robustness. The spatiotemporal analysis shows that flood frequency fluctuates upward and concentrates in May–August, whereas landslide frequency fluctuates sharply and decays noticeably later than floods; floods cluster in East, South, Central and Southwest China, while landslides cluster in Southwest, Central and South China. Regional attribution reveals pronounced spatial differentiation in the driving mechanisms: floods are driven by hazard-bearing bodies, by meteorological factors, and by their combination, whereas landslides are driven by hazard-bearing bodies, by terrain–cumulative rainfall, and by hazard-bearing bodies–extreme rainfall.},
+  description = {We propose Geo-LGBM, a framework that couples a geographical detector with LightGBM to quantify the multi-factor, non-linear drivers of rainstorm-induced floods and landslides across China.},
+  note = {Status: advance online publication. Funded by the Major Science and Technology Project of Qinghai Province (2024-SF-A1), the Jiangsu Provincial Special Fund for the "Belt and Road" Innovation Cooperation Programme (BZ2024035), and the Guangxi Major Special Programme (Gui Ke JF2503980041).},
+  keywords = {flood hazard, landslide hazard, spatiotemporal differentiation, hazard factor analysis, Geo-LGBM}
 }

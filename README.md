@@ -28,7 +28,7 @@ Windows 下也可以直接双击 **`start-dev.bat`**，它会自动装依赖、�
 | 姓名、单位、邮箱、导航栏 | `content_zh/config.toml` |
 | 首页自我介绍 | `content_zh/bio.md` |
 | 最近动态 | `content_zh/news.toml` |
-| 论文列表 | `content/publications.bib` |
+| 论文列表（中文 / 英文各一份） | `content_zh/publications.bib`、`content/publications.bib` |
 | 项目卡片 | `content_zh/projects.toml` |
 | 头像 / 图标 | `public/photo.jpg`、`public/favicon.svg` |
 

@@ -52,7 +52,10 @@ export interface Publication {
   preview?: string;
   summary?: string;
   researchArea: ResearchArea;
+  /** 首页精选论文卡片下方的简介，来自 bib 的 description 字段 */
   description?: string;
+  /** 论文页卡片下方的说明（期刊状态、基金项目等），来自 bib 的 note 字段 */
+  note?: string;
 }
 
 export type PublicationType =

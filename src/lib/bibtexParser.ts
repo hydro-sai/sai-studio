@@ -88,7 +88,10 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       url: tags.url,
       code: tags.code,
       abstract: cleanBibTeXString(tags.abstract),
-      description: cleanBibTeXString(tags.description || tags.note),
+      // 首页「精选论文」卡片下方的简介，对应 bib 里的 description 字段
+      description: cleanBibTeXString(tags.description),
+      // 论文页卡片下方的说明（期刊状态、基金项目等），对应 bib 里的 note 字段
+      note: cleanBibTeXString(tags.note),
       selected,
       preview,
 

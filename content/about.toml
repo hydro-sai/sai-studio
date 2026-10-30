@@ -4,9 +4,9 @@ title = "About"
 # 首页左侧的三个研究兴趣标签，随便加减
 [profile]
 research_interests = [
-  "Hydrology–Landslide Coupling",
-  "Landslide Numerical Modelling",
-  "Open-source Scientific Software"
+  "Rainfall-induced flood and landslide hazard simulation",
+  "Hydrological–landslide coupling mechanisms",
+  "Open-source scientific software development and improvement"
 ]
 
 # 首页从上到下依次渲染这几个 section，可以调顺序、删掉不想要的

@@ -1,7 +1,9 @@
-I am a graduate student in hydrology at Hohai University, working on the coupling between rainfall-triggered landslides and catchment-scale hydrological processes.
+I completed my undergraduate studies in Hydrology and Water Resources Engineering (Wang Huzhen Program) at North China University of Water Resources and Electric Power, where I focused on the application of multi-source precipitation data to daily streamflow simulation and graduated with an honors bachelor’s degree.
 
-Most of my time goes into **iHydroSlide3D**, an open-source coupled hydrology–landslide model that I help port and maintain. I am interested in how water moves through a catchment and when, where and why slopes fail during extreme rainfall.
+For my master’s degree, I studied Hydrology and Water Resources at the College of Hydrology and Water Resources, Hohai University, focusing on the coupled simulation of rainfall-induced floods and landslides.
 
-Before graduate school I studied hydrology and water resources, and I have been keeping a small personal site since 2023 — this is its fourth and hopefully final incarnation.
+Most of my time has been devoted to **iHydroSlide**—an open-source hydrological–landslide coupled model—where I contribute to migrating and maintaining its Python version. My research centers on how water moves through catchments and on when, where, and why slope failures occur under extreme rainfall.
 
-Feel free to reach out if you work on rainfall-induced landslides, hydrological modelling, or scientific software.
+Since 2023, I have maintained a small personal website of my own; this is its fourth—and probably final—redesign.
+
+If you are also working on rainfall-induced flood and landslide simulation or on building scientific software, please feel free to get in touch.
